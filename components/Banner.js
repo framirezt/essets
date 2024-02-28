@@ -1,24 +1,20 @@
 import React from "react";
 import Image from "next/image";
-import blocks from 
+import blocks from "@/images/blocks.png";
 
 const Banner = () => {
   return (
-    <>
+    <div>
+      <Image className="h-20 w-auto -mt-2 pb-1" src={blocks} alt="Blocks" />
       <div>
-        <Image className="" src={} alt="Your Company" />
-        <div>
-          <p className="text-lg">
-            Buy & Sell Real Estate <br /> With Crypto
-          </p>
-          <p className=""></p>
-          <div>
-            <button></button>
-            <button></button>
-          </div>
-        </div>
+        <p></p>
+        <p></p>
       </div>
-    </>
+      <div>
+        <button></button>
+        <button></button>
+      </div>
+    </div>
   );
 };
 
