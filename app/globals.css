@@ -26,3 +26,13 @@ body {
     text-wrap: balance;
   }
 }
+
+/* para el color de "With Crypto" */
+
+.linear-gradient-orange {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to right, transparent, orange);
+  -webkit-background-clip: text;
+  color: transparent;
+}
