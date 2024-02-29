@@ -1,38 +1,32 @@
 import React from "react";
+import Step from "./Step";
 
 const Real_Estate = () => {
+  const steps = [
+    {
+      title: "PSA (lawyers)",
+      description:
+        "Defines terms and conditions of the transaction & due diligence period by the Buyer’s lawyer",
+    },
+  ];
+
   return (
-    <div className="bg">
-      <div>
-        <p className="text-2xl">Real Estate Closing</p>
-        <button>Get started today!</button>
+    <div className="bg-[--beige] py-20 px-20">
+      <div className="grid grid-cols-2">
         <div>
-          <div>
-            <p>Step 1</p>
-            <p>PSA (lawyers)</p>
-            <p>
-              Defines terms and conditions of the transaction & due diligence
-              period by the Buyer’s lawyer
-            </p>
-          </div>
-          <div>
-            <p>Step 2</p>
-            <p>Payment Agreement (Essets)</p>
-            <p>Define the payment conditions, based on the PSA</p>
-          </div>
-          <div>
-            <p>Step 3</p>
-            <p>Closing (lawyers) </p>
-            <p>
-              Closing documents are executed & disbursement instructions are
-              electronically signed to Essets
-            </p>
-          </div>
-          <div>
-            <p>Step 4</p>
-            <p>Disbursement (Essets) </p>
-            <p>Payment processed by Essets</p>
-          </div>
+          <p className="text-2xl">Real Estate Closing</p>
+          <button>Get started today!</button>
+        </div>
+
+        <div className="bg-white p-10 rounded-2xl">
+          {steps.map((step, index) => (
+            <Step
+              key={index}
+              stepNumber={index + 1}
+              title={step.title}
+              description={step.description}
+            />
+          ))}
         </div>
       </div>
     </div>
