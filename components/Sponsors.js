@@ -5,7 +5,7 @@ import sponsor from "@/images/amazon.png";
 const Sponsors = () => {
   return (
     // sponsors
-    <div className="mt-6 h-screen overflow-y-auto">
+    <div className="mt-6 h-96 overflow-y-auto">
       <p className="h-12 text-center">Trusted by</p>
       {/* fotos */}
       <div className="flex justify-center">
