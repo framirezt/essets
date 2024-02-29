@@ -36,3 +36,9 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
+
+/* para unos borders */
+
+.rounded-custom {
+  border-radius: 1.5rem;
+}
