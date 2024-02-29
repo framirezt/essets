@@ -5,8 +5,10 @@ import deal from "@/images/transaction-history.png";
 import exchange from "@/images/Screenshot_2024-02-24_at_5.34.15_PM-removebg-preview.png";
 
 const InfoEssets = () => {
+  // Informacion de Essets dividido en tres secciones
   return (
-    <div className="mt-16 flex flex-row justify-center gap-8 ">
+    <div className="mt-16 flex flex-row justify-center gap-8 mb-56">
+      {/* Seccion 1 House*/}
       <div className="rounded-custom flex flex-col items-center rounded p-4 border-2">
         <Image className="mb-4 h-12 w-12" src={house} alt="House" />
         <p className="text-center text-xs">
@@ -14,6 +16,7 @@ const InfoEssets = () => {
           crypto <br /> currencies
         </p>
       </div>
+      {/* Seccion 2  Deal*/}
       <div className="rounded-custom flex flex-col items-center rounded p-4 border-2">
         <Image className="mb-4 h-12 w-12" src={deal} alt="Deal" />
         <p className="text-center text-xs">
@@ -23,6 +26,7 @@ const InfoEssets = () => {
           recognized crypto payments provider
         </p>
       </div>
+      {/* Seccion 3 Exchange */}
       <div className="rounded-custom flex flex-col items-center rounded-lg p-4 border-2">
         <Image className="mb-4 h-12 w-12" src={exchange} alt="Exchange" />
         <p className="text-center text-xs">
