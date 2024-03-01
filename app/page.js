@@ -4,6 +4,7 @@ import InfoEssets from "@/components/InfoEssets";
 import Navbar from "@/components/Navbar";
 import Real_Estate from "@/components/Real_Estate";
 import Sponsors from "@/components/Sponsors";
+import Why_Essets from "@/components/Why_Essets";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Essets />
       <InfoEssets />
       <Real_Estate />
+      <Why_Essets />
     </main>
   );
 }

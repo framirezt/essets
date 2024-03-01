@@ -9,7 +9,7 @@ const InfoEssets = () => {
   return (
     <div className="mt-16 flex flex-row justify-center gap-8 mb-56">
       {/* Seccion 1 House*/}
-      <div className="rounded-custom flex flex-col items-center rounded p-4 border-2">
+      <div className="rounded-custom flex flex-col items-center rounded p-4 border-2 bg-gray-50">
         <Image className="mb-4 h-12 w-12" src={house} alt="House" />
         <p className="text-center text-xs">
           Now with Essets is easy to sell or <br></br>purchase real estate with
@@ -17,7 +17,7 @@ const InfoEssets = () => {
         </p>
       </div>
       {/* Seccion 2  Deal*/}
-      <div className="rounded-custom flex flex-col items-center rounded p-4 border-2">
+      <div className="rounded-custom flex flex-col items-center rounded p-4 border-2 bg-gray-50">
         <Image className="mb-4 h-12 w-12" src={deal} alt="Deal" />
         <p className="text-center text-xs">
           Essets is the neutral third party between buyer and <br /> seller that
@@ -27,7 +27,7 @@ const InfoEssets = () => {
         </p>
       </div>
       {/* Seccion 3 Exchange */}
-      <div className="rounded-custom flex flex-col items-center rounded-lg p-4 border-2">
+      <div className="rounded-custom flex flex-col items-center rounded-lg p-4 border-2 bg-gray-50">
         <Image className="mb-4 h-12 w-12" src={exchange} alt="Exchange" />
         <p className="text-center text-xs">
           Essets can process the payment either in <br /> cryptocurrency or, in
