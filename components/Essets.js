@@ -5,7 +5,7 @@ import bank from "@/images/Screenshot_2024-02-24_at_5.12.57_PM-removebg-preview.
 const Essets = () => {
   return (
     <div>
-      <div className="flex flex-row">
+      <div className="flex flex-row mt-32">
         {/* titulo y descripcion de Essets */}
         <div className="ml-32">
           <h1 className="text-2xl font-bold text-blue-600">Essets</h1>
