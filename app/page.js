@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import Core_Team from "@/components/Core_Team";
 import Essets from "@/components/Essets";
 import InfoEssets from "@/components/InfoEssets";
 import Navbar from "@/components/Navbar";
@@ -16,6 +17,7 @@ export default function Home() {
       <InfoEssets />
       <Real_Estate />
       <Why_Essets />
+      <Core_Team />
     </main>
   );
 }
