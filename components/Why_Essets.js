@@ -19,7 +19,7 @@ const Why_Essets = () => {
       <div class="text-center">
         <div class="relative text-5xl font-bold">
           <h1 class="mb-2 text-blue-600 -ml-16">WHY</h1>
-          <h1 class="text-green-200 absolute top-2 ml-24 left-80 transform translate-x-full mt-8 ">
+          <h1 class="text-green-200 absolute top-2 -ml-24 left-80 transform translate-x-full mt-8 ">
             ESSETS
           </h1>
         </div>
@@ -29,7 +29,7 @@ const Why_Essets = () => {
         {/* first block */}
         <div className="1 rounded-custom flex flex-1 flex-col items-center rounded p-4 border-2 bg-gray-50">
           <Image
-            className="-ml-56 mt-10 mx-6 h-16 w-16"
+            className="-ml-28 mt-10 mx-6 h-16 w-16"
             src={stars}
             alt="Stars"
           />
@@ -42,7 +42,7 @@ const Why_Essets = () => {
         {/* second block */}
         <div className="rounded-custom flex flex-1 flex-col items-center rounded p-4 border-2 bg-gray-50 ">
           <Image
-            className="mx-6 mt-10 h-16 w-16 -ml-60"
+            className="mx-6 mt-10 h-16 w-16 -ml-36"
             src={lock}
             alt="Lock"
           />
@@ -53,7 +53,7 @@ const Why_Essets = () => {
         {/* third block */}
         <div className="flex-1 rounded-custom flex flex-col items-center rounded p-4 border-2 bg-gray-50">
           <Image
-            className="mx-6 h-16 w-16 mt-10 -ml-56"
+            className="mx-6 h-16 w-16 mt-10 -ml-32"
             src={agreement}
             alt="Agreement"
           />

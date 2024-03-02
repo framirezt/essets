@@ -16,7 +16,7 @@ const Essets = () => {
         </div>
 
         {/* bolita y banco (imagenes) */}
-        <div className=" w-96 h-96 ml-72 mr-32 float-right">
+        <div className="w-96 h-96 ml-72 mr-32 float-right">
           <Image src={bank} alt="Bank" />
         </div>
       </div>
