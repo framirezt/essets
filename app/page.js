@@ -1,4 +1,6 @@
 import Banner from "@/components/Banner";
+import Bottom_TabBar from "@/components/Bottom_TabBar";
+import Contact from "@/components/Contact";
 import Core_Team from "@/components/Core_Team";
 import Essets from "@/components/Essets";
 import InfoEssets from "@/components/InfoEssets";
@@ -18,6 +20,8 @@ export default function Home() {
       <Real_Estate />
       <Why_Essets />
       <Core_Team />
+      <Contact />
+      <Bottom_TabBar />
     </main>
   );
 }

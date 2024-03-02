@@ -19,7 +19,7 @@ const Why_Essets = () => {
       <div class="text-center">
         <div class="relative text-5xl font-bold">
           <h1 class="mb-2 text-blue-600 -ml-16">WHY</h1>
-          <h1 class="text-green-200 absolute top-2 -ml-24 left-80 transform translate-x-full mt-8 ">
+          <h1 class="text-green-200 absolute top-2 -ml-4 left-80 transform translate-x-full mt-8 ">
             ESSETS
           </h1>
         </div>
