@@ -7,11 +7,11 @@ import logo from "@/images/logo.png";
 import bitcoin from "@/images/btc.png";
 import Link from "next/link";
 
-const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "About", href: "#", current: false },
-  { name: "How it works", href: "#", current: false },
-  { name: "Contact us", href: "#", current: false },
+const links = [
+  { name: "Home", href: "#home", current: true },
+  { name: "About", href: "#about", current: false },
+  { name: "How it works", href: "#how", current: false },
+  { name: "Contact us", href: "#contact", current: false },
 ];
 
 function classNames(...classes) {
@@ -48,7 +48,7 @@ export default function Navbar() {
                 {/* links */}
                 <div className="hidden sm:mx-6 sm:block">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
+                    {links.map((item) => (
                       <Link
                         key={item.name}
                         href={item.href}
@@ -82,7 +82,7 @@ export default function Navbar() {
           {/* mobile links */}
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
+              {links.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"

@@ -1,5 +1,5 @@
 import Banner from "@/components/Banner";
-import Bottom_TabBar from "@/components/Bottom_TabBar";
+import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import Core_Team from "@/components/Core_Team";
 import Essets from "@/components/Essets";
@@ -19,9 +19,9 @@ export default function Home() {
       <InfoEssets />
       <Real_Estate />
       <Why_Essets />
-      <Core_Team />
+      {/* <Core_Team /> */}
       <Contact />
-      <Bottom_TabBar />
+      <Footer />
     </main>
   );
 }

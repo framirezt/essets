@@ -1,6 +1,13 @@
-export default function Step({ stepNumber, title, description }) {
+import { classNames } from "@/public/functions";
+
+export default function Step({ stepNumber, title, description, numSteps }) {
   return (
-    <div className="border-l-[2px] border-[--color6] pl-12 pr-8 pb-14 relative">
+    <div
+      className={classNames(
+        stepNumber === numSteps ? "border-transparent" : "border-[--color6]",
+        "border-l-[2px]  pl-12 pr-8 pb-14 relative"
+      )}
+    >
       {/* circulito */}
       <div className="w-4 aspect-square rounded-full absolute bg-[--color6] -left-[9px] "></div>
 

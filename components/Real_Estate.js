@@ -62,6 +62,7 @@ const Real_Estate = () => {
               stepNumber={index + 1}
               title={step.title}
               description={step.description}
+              numSteps={steps1.length}
             />
           ))}
         </div>
@@ -75,6 +76,7 @@ const Real_Estate = () => {
               stepNumber={index + 1}
               title={step.title}
               description={step.description}
+              numSteps={steps2.length}
             />
           ))}
         </div>
