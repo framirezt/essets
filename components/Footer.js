@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row items-start">
         <Image src={logo} alt="essets" className="w-56 pb-8 md:mb-0 " />
 
-        <div className="grid grid-cols-2 md:flex flex-row gap-y-4 gap-x-12 md:mt-10 md:ml-16">
+        <div className="grid grid-cols-2 md:flex flex-row gap-y-4 gap-x-12 md:mt-10 md:ml-64">
           {links.map((link, i) => (
             <Link key={i} href={link.href}>
               <p className="">{link.name}</p>
@@ -29,7 +29,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <p className="text-center text-[#898989]">© Copyright 2024, Essets</p>
+      <p className="text-center text-[#898989] -ml-3">
+        © Copyright 2024, Essets
+      </p>
     </div>
   );
 };

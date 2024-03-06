@@ -77,9 +77,9 @@ const Contact = () => {
         <button
           type="submit"
           onClick={submitForm}
-          className="bg-black text-white col-span-2 md:w-52 py-2 mt-6 rounded-lg  "
+          className="bg-black text-white col-span-2 md:w-52 py-2 mt-6 rounded-lg"
         >
-          Send Email
+          Send Message
         </button>
       </form>
     </div>
