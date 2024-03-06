@@ -32,7 +32,7 @@ const Real_Estate = () => {
     {
       title: "Deposit",
       description:
-        "Transfers crypto to Essets corporate crypto account BTC, USDC, USDT). Immediately converted to US$ upon receipt in case price will be completed in fiat",
+        "Buyer transfers the funds to complete the transaction to Essets designated account. If deposited in different currencies other than US$, immediately converted in US$ upon receipt",
     },
     {
       title: "Payment Process",

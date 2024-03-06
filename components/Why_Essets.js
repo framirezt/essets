@@ -27,12 +27,8 @@ const Why_Essets = () => {
       {/* blocks */}
       <div className="mt-24 flex justify-between gap-5 mx-8">
         {/* first block */}
-        <div className="1 rounded-custom flex flex-1 flex-col items-center rounded p-4 border-2 bg-gray-50">
-          <Image
-            className="-ml-28 mt-10 mx-6 h-16 w-16"
-            src={stars}
-            alt="Stars"
-          />
+        <div className="rounded-custom flex flex-1 flex-col rounded p-4 border-2 bg-gray-50">
+          <Image className="mt-10 mx-6 h-16 w-16" src={stars} alt="Stars" />
           <p className="mt-8 ml-2">
             Broad experience in the real estate industry in Central America,
             Mexico and <br />
@@ -40,20 +36,16 @@ const Why_Essets = () => {
           </p>
         </div>
         {/* second block */}
-        <div className="rounded-custom flex flex-1 flex-col items-center rounded p-4 border-2 bg-gray-50 ">
-          <Image
-            className="mx-6 mt-10 h-16 w-16 -ml-36"
-            src={lock}
-            alt="Lock"
-          />
+        <div className="rounded-custom flex flex-1 flex-col rounded p-4 border-2 bg-gray-50 ">
+          <Image className="mx-6 mt-10 h-16 w-16" src={lock} alt="Lock" />
           <p className="mt-8">
             Secure transaction processed trough licensed corporate providers
           </p>
         </div>
         {/* third block */}
-        <div className="flex-1 rounded-custom flex flex-col items-center rounded p-4 border-2 bg-gray-50">
+        <div className="flex-1 rounded-custom flex flex-col rounded p-4 border-2 bg-gray-50">
           <Image
-            className="mx-6 h-16 w-16 mt-10 -ml-32"
+            className="mx-6 h-16 w-16 mt-10"
             src={agreement}
             alt="Agreement"
           />

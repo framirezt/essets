@@ -6,7 +6,7 @@ import america from "@/images/centralamerica.png";
 const Sponsors = () => {
   return (
     // sponsors
-    <div className="mt-6 h-96 overflow-y-auto">
+    <div className="mt-6 h-72 overflow-y-auto">
       <div className="mt-10 flex flex-row gap-12 text-base justify-center ">
         <div>
           <p className="text-3xl text-neutral-600 border-l-2 pl-4 border-orange-500">
