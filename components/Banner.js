@@ -18,13 +18,13 @@ const Banner = () => {
       <div className="text-center relative top-32">
         <p className="text-5xl font-bold">
           Buy & Sell Real Estate <br />
-          <span className="linear-gradient-orange text-center h-[4rem] relative top-[90px] from-transparent-50 to-orange">
-            With Crypto
+          <span className="linear-gradient-orange text-center h-[4rem] relative top-[90px]">
+            With Confidence
           </span>
         </p>
         {/* {subtitle} */}
-        <p className="relative top-16 text-stone-400 mt-4">
-          Crypto escrow services for real estate
+        <p className="relative text-lg top-16 text-stone-500 mt-4">
+          Digital escrow services for real estate
         </p>
       </div>
       <div className="flex gap-4 relative top-56 justify-center">
@@ -32,7 +32,7 @@ const Banner = () => {
         <button className=" px-6 py-2 border bg-black font text-white rounded-lg">
           Book Consultation
         </button>
-        <button className="border border-black px-6 py-2 rounded-lg">
+        <button className="border border-black px-12 py-2 rounded-lg">
           Learn more
         </button>
       </div>

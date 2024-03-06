@@ -66,14 +66,6 @@ export default function Navbar() {
                   <button className="bg-black text-white py-2 px-6 rounded-lg sm:ml-12 ">
                     Book demo{" "}
                   </button>
-                  <div className="flex flex-row items-center">
-                    <Image
-                      className="h-16 w-auto"
-                      src={bitcoin}
-                      alt="Your Company"
-                    />
-                    <p>$53,355.85</p>
-                  </div>
                 </div>
               </div>
             </div>

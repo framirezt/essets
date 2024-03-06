@@ -19,7 +19,7 @@ const Contact = () => {
   return (
     <div className=" py-12">
       <p className="text-center text-4xl text-[--color2] font-bold">
-        Contact Us
+        CONTACT US
       </p>
 
       <form
