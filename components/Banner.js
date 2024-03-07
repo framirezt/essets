@@ -4,35 +4,36 @@ import blocks from "@/images/blocks.png";
 
 const Banner = () => {
   return (
-    <div className="relative h-[80vh] overflow-y-hidden">
+    <div className="relative h-[80vh] overflow-y-hidden px-4 md:px-0">
       {/* blocks */}
       <Image
-        className="h-80 w-auto -mt-2 pb-1 absolute bottom-0 right-0"
+        className="h-48 md:h-80 w-auto -mt-2 pb-1 absolute bottom-0 right-0"
         src={blocks}
         alt="Blocks"
       />
       {/* bolita */}
-      <div className=" absolute -bottom-[45%] -left-[40%] bg-[radial-gradient(50%_50%_at_50%_50%,rgba(0,175,240,0.47)_0%,rgba(140,224,255,0.25)_47.5%,_rgba(255,255,255,0.00)_100%)] w-[1192px] h-[947px] rounded-full"></div>
+      <div className=" absolute -bottom-[25%] md:-bottom-[45%] -left-[85%] md:-left-[40%] bg-[radial-gradient(50%_50%_at_50%_50%,rgba(0,175,240,0.47)_0%,rgba(140,224,255,0.25)_47.5%,_rgba(255,255,255,0.00)_100%)] w-[892px] md:w-[1192px] h-[547px]  md:h-[947px] rounded-full"></div>
 
       {/* title */}
-      <div className="text-center relative top-32">
-        <p className="text-5xl font-bold">
-          Buy & Sell Real Estate <br />
-          <span className="linear-gradient-orange text-center h-[4rem] relative top-[90px]">
+      <div className="text-center relative top-16 md:top-32">
+        <p className="text-2xl md:text-5xl font-bold">
+          Your Real Estate Transaction <br />
+          <span className="linear-gradient-orange text-center top-[70px] h-[4rem] relative md:top-[90px] text-nowrap">
             With Confidence
           </span>
         </p>
         {/* {subtitle} */}
-        <p className="relative text-lg top-16 text-stone-500 mt-4">
-          Digital escrow services for real estate
+        <p className="relative text-sm md:text-lg top-16 text-stone-500 md:mt-4">
+          Payment processing service for real estate
+          {/* transactions */}
         </p>
       </div>
-      <div className="flex gap-4 relative top-56 justify-center">
+      <div className="flex gap-4 relative top-40 md:top-56 justify-center text-sm text-nowrap">
         {/* buttons */}
-        <button className=" px-6 py-2 border bg-black font text-white rounded-lg">
+        <button className=" px-6 py-2 border bg-black  text-white rounded-lg ">
           Book Consultation
         </button>
-        <button className="border border-black px-12 py-2 rounded-lg">
+        <button className="border border-black px-12 py-2 rounded-lg ">
           Learn more
         </button>
       </div>

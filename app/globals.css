@@ -33,8 +33,13 @@ body {
 .linear-gradient-orange {
   position: absolute;
   transform: translate(-50%, -50%);
-  background: linear-gradient(to right, transparent, orange);
+  background: linear-gradient(
+    to right,
+    rgba(255, 115, 0, 0.2),
+    rgba(255, 115, 0, 1)
+  );
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 

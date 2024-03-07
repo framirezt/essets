@@ -6,9 +6,9 @@ import bluehouse from "@/images/bluehouse.png";
 const Essets = () => {
   return (
     <div>
-      <div className="flex flex-row mt-32 ml-12">
+      <div className="flex flex-col md:flex-row mt-32 ml-12">
         {/* titulo y descripcion de Essets */}
-        <div className="ml-32">
+        <div className="md:ml-32">
           <h1 className="text-3xl font-bold text-blue-600">Essets</h1>
           <p className="mt-8 text-lg">
             A digital platform that facilitates real estate <br />
@@ -17,18 +17,9 @@ const Essets = () => {
         </div>
 
         {/* bolita y banco (imagenes) */}
-        <div className="w-1/3 h-1/2 -mt-24 ml-72">
+        <div className=" w-[80vw] md:w-1/3 md:h-1/2 mt-8 md:-mt-24 md:ml-72">
           <Image src={bluehouse} alt="House" />
         </div>
-      </div>
-
-      {/* catchphrase */}
-      <div>
-        <p className="mt-16 font-bold text-blue-600 text-3xl flex justify-center text-center">
-          MAKING POSSIBLE TO BUY AND SELL
-          <br /> REAL ESTATE IN MEXICO, CENTRAL
-          <br /> AMERICA AND THE CARIBBEAN
-        </p>
       </div>
     </div>
   );

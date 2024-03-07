@@ -1,42 +1,45 @@
 import React from "react";
 import Image from "next/image";
 import linkedin from "@/images/linkedin.png";
+import profile1 from "@/images/profile1.png";
+import profile2 from "@/images/profile2.png";
 
 const Team = () => {
   return (
-    <div className="flex flex-row justify-center gap-8 mb-36">
+    <div className="flex flex-col md:flex-row justify-center gap-8 mb-36">
       {/* primer team member */}
-      <div className="bg-gray-50 flex flex-col items-center px-10 border-2 rounded-lg p-4 py-20">
-        {/* <Image src={team} alt="House" /> */}
-        <p className="text-2xl text-center">ORLANDO LOPEZ</p>
-        <p className="mt-10">
-          25 years experience in the industry, he has <br />
-          structured numerous trust transactions, <br />
-          administration and custody of funds for <br />
-          banks and ﬁnancial institutions at a national <br />
-          and international level, in an amount that <br />
-          exceeds US $1.8B
-        </p>
-        <div className="mt-8">
-          <Image className="w-12 h-12" src={linkedin} alt="LinkedIn" />
-        </div>
-      </div>
+      <Profile
+        name={"ORLANDO LOPEZ"}
+        url={profile1}
+        bio={
+          "25 years experience in the industry, he has structured numerous trust transactions, administration and custody of funds for banks and ﬁnancial institutions at a national and international level, in an amount that exceeds US $1.8B"
+        }
+      />
       {/* segundo team member */}
-      <div className="bg-gray-50 flex flex-col items-center px-10 border-2 rounded-lg p-4 py-20 flex-grow-0">
-        {/* <Image src={team} alt="House" /> */}
-        <p className="text-2xl text-center">ESTEBAN RODRIGUEZ</p>
-        <p className="mt-14">
-          15 years experience in the industry he has <br />
-          participated in the structuring of ﬁduciary <br />
-          transactions and custody of funds for <br />
-          amounts exceeding US $1.5B.
-        </p>
-        <div className="mt-16">
-          <Image className="w-12 h-12" src={linkedin} alt="LinkedIn" />
-        </div>
-      </div>
+      <Profile
+        name={"ESTEBAN RODRIGUEZ"}
+        url={profile2}
+        bio={
+          " 15 years experience in the industry he has participated in the structuring of ﬁduciary transactions and custody of funds for  amounts exceeding US $1.5B."
+        }
+      />
     </div>
   );
 };
 
 export default Team;
+
+function Profile({ url, name, bio }) {
+  return (
+    <div className="bg-gray-50 relative flex flex-col items-center px-10 border-2 rounded-lg p-4 pt-9 pb-28 flex-grow-0 w-[25rem]">
+      <Image src={url} alt="" />
+      <p className="text-2xl text-center mt-4 ">{name}</p>
+      <p className="mt-10 text-center">{bio}</p>
+      <Image
+        className="w-12 h-12 bottom-10 mt-16 absolute"
+        src={linkedin}
+        alt="LinkedIn"
+      />
+    </div>
+  );
+}

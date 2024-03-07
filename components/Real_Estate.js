@@ -44,7 +44,7 @@ const Real_Estate = () => {
   return (
     <div className="bg-[--beige] py-20 px-20">
       {/* first pair */}
-      <div className="grid grid-cols-2 mt-16">
+      <div className="grid  md:grid-cols-2 mt-16">
         <div>
           <p className="text-3xl text-blue-950 font-bold">
             Real Estate Closing <br />
@@ -68,7 +68,7 @@ const Real_Estate = () => {
         </div>
       </div>
       {/* second pair */}
-      <div className="grid grid-cols-2 mt-28">
+      <div className="grid md:grid-cols-2 mt-28">
         <div className="bg-white p-10 rounded-2xl">
           {steps2.map((step, index) => (
             <Step
