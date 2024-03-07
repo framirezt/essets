@@ -15,17 +15,17 @@ const Why_Essets = () => {
 
   return (
     // titulo
-    <div className="py-20 px-20 mb-24">
+    <div className="py-20 px-20 mb-32">
       <div class="text-center">
         <div class="relative text-5xl font-bold">
           <h1 class="mb-2 text-blue-600 -ml-16">WHY</h1>
-          <h1 class="text-green-200 absolute top-2 -ml-4 left-80 transform translate-x-full mt-8 ">
+          <h1 class="text-green-200 absolute top-2 -ml-12 left-1/2 mt-8 ">
             ESSETS
           </h1>
         </div>
       </div>
       {/* blocks */}
-      <div className="mt-24 flex justify-between gap-5 mx-8">
+      <div className="mt-36 flex justify-between gap-5 mx-8">
         {/* first block */}
         <div className="rounded-custom flex flex-1 flex-col rounded p-4 border-2 bg-gray-50">
           <Image className="mt-10 mx-6 h-16 w-16" src={stars} alt="Stars" />
