@@ -1,10 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import blocks from "@/images/blocks.png";
+import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className="relative h-[80vh] overflow-y-hidden px-4 md:px-0">
+    <div
+      className="relative h-[80vh] max-w-[100vw] overflow-hidden px-4 md:px-0"
+      id="home"
+    >
       {/* blocks */}
       <Image
         className="h-48 md:h-80 w-auto -mt-2 pb-1 absolute bottom-0 right-0"
@@ -30,12 +34,18 @@ const Banner = () => {
       </div>
       <div className="flex gap-4 relative top-40 md:top-56 justify-center text-sm text-nowrap">
         {/* buttons */}
-        <button className=" px-6 py-2 border bg-black  text-white rounded-lg ">
+        <Link
+          href={"#contact"}
+          className=" px-6 py-2 border bg-black  text-white rounded-lg "
+        >
           Book Consultation
-        </button>
-        <button className="border border-black px-12 py-2 rounded-lg ">
+        </Link>
+        <Link
+          href={"#about"}
+          className="border border-black px-12 py-2 rounded-lg "
+        >
           Learn more
-        </button>
+        </Link>
       </div>
     </div>
   );

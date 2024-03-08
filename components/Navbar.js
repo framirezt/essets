@@ -14,10 +14,6 @@ const links = [
   { name: "Contact us", href: "#contact", current: false },
 ];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
 export default function Navbar() {
   return (
     <Disclosure as="nav" className="">
@@ -62,18 +58,21 @@ export default function Navbar() {
                 </div>
 
                 {/* button + bitcoin price */}
-                <div className=" flex-row items-center gap-8 hidden sm:flex">
+                <Link
+                  href={"#contact"}
+                  className=" flex-row items-center gap-8 hidden sm:flex"
+                >
                   <button className="bg-black text-white py-2 px-6 rounded-lg sm:ml-12 ">
                     Book demo{" "}
                   </button>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
 
           {/* mobile links */}
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
+          <Disclosure.Panel className="sm:hidden absolute bg-white z-20 w-screen border-b border-gray-200">
+            <div className="space-y-1 px-2 pb-3 pt-2 ">
               {links.map((item) => (
                 <Disclosure.Button
                   key={item.name}
