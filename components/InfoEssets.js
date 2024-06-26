@@ -11,7 +11,8 @@ const InfoEssets = () => {
       icon: house,
       description: (
         <p className="text-center">
-          Now with Essets is easy to sell or <br></br>purchase real estate
+          Now with Essets is easy to sell or <br></br>purchase real estate with
+          crypto
         </p>
       ),
     },
@@ -19,9 +20,10 @@ const InfoEssets = () => {
       icon: deal,
       description: (
         <p className="text-center">
-          Essets is the neutral third party <br />
-          between buyer and seller that
-          <br /> facilitates the transaction
+          Essets is the neutral third party for the
+          <br />
+          custody and the trading of the crypto
+          <br /> to complete the transaction
         </p>
       ),
     },
@@ -30,9 +32,10 @@ const InfoEssets = () => {
       icon: handshake,
       description: (
         <p className="text-center">
-          Digital escrow is available in <br />
-          partnership with recognized payment <br />
-          providers
+          Digital escrow, custody and trading is
+          <br />
+          performed in partnership with <br />
+          recognized payment providers
         </p>
       ),
     },
@@ -41,7 +44,8 @@ const InfoEssets = () => {
       description: (
         <p className="text-center ">
           Payment processing available in <br />
-          different currencies converted to US$
+          different crypto currencies converted <br />
+          to US$
         </p>
       ),
     },
@@ -53,8 +57,7 @@ const InfoEssets = () => {
       <div>
         <p className="mt-16 font-bold text-blue-600 text-xl md:text-3xl flex justify-center text-center">
           MAKING POSSIBLE TO BUY AND SELL
-          <br /> REAL ESTATE IN MEXICO, CENTRAL
-          <br /> AMERICA AND THE CARIBBEAN
+          <br /> REAL ESTATE WITH CRYPTO IN LATAM
         </p>
       </div>
       <div className="mt-24 flex md:flex-row flex-col justify-center gap-4 mb-56 px-8">

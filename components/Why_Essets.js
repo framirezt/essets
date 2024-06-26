@@ -9,7 +9,7 @@ const Why_Essets = () => {
     {
       src: "stars",
       description:
-        "Broad experience in the real estate industry  in Central America, Mexico and the Caribbean",
+        "Broad experience in the real estate industry in Central America, Mexico and the Caribbean",
     },
   ];
 
@@ -29,17 +29,19 @@ const Why_Essets = () => {
         {/* first block */}
         <div className="rounded-custom flex flex-1 flex-col rounded p-4 border-2 bg-gray-50">
           <Image className="mt-10 mx-6 h-16 w-16" src={stars} alt="Stars" />
-          <p className="mt-8 ml-2">
-            Broad experience in the real estate industry in Central America,
-            Mexico and <br />
-            the Caribbean
+          <p className="mt-8 ml-6 text-xl">
+            Broad experience in the real estate
+            <br /> industry in LATAM
           </p>
         </div>
         {/* second block */}
         <div className="rounded-custom flex flex-1 flex-col rounded p-4 border-2 bg-gray-50 ">
           <Image className="mx-6 mt-10 h-16 w-16" src={lock} alt="Lock" />
-          <p className="mt-8">
-            Secure transaction processed trough licensed corporate providers
+          <p className="mt-8 ml-6 text-xl">
+            Secure transaction processed trough
+            <br /> licensed corporate providers. Exhaustive <br />
+            KYC, SOF and Wallet verification to
+            <br /> ensure transparency and legitimacy.
           </p>
         </div>
         {/* third block */}
@@ -49,9 +51,10 @@ const Why_Essets = () => {
             src={agreement}
             alt="Agreement"
           />
-          <p className="mt-8">
-            Extense network of real estate lawyers in the region that can assist
-            you with your transaction
+          <p className="mt-8 ml-6 text-xl">
+            Extense network of real estate lawyers in
+            <br /> the region that can assist you with your
+            <br /> transaction
           </p>
         </div>
       </div>

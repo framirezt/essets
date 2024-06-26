@@ -17,14 +17,15 @@ const Banner = () => {
       {/* title */}
       <div className="text-center relative top-16 md:top-32">
         <p className="text-2xl md:text-5xl font-bold">
-          Your Real Estate Transaction <br />
+          Your Crypto Real Estate Transaction <br />
           <span className="linear-gradient-orange text-center top-[70px] h-[4rem] relative md:top-[90px] text-nowrap">
             With Confidence
           </span>
         </p>
         {/* {subtitle} */}
         <p className="relative text-sm md:text-lg top-16 text-stone-500 md:mt-4">
-          Payment processing service for real estate
+          Crypto Trading, Custody and Payment processing service
+          <br /> for real estate transactions
           {/* transactions */}
         </p>
       </div>

@@ -11,8 +11,9 @@ const Essets = () => {
         <div className="md:ml-32">
           <h1 className="text-3xl font-bold text-blue-600">Essets</h1>
           <p className="mt-8 text-lg">
-            A digital platform that facilitates real estate <br />
-            transactions in Central America, Mexico and the <br /> Caribbean.
+            A digital platform that facilitates payment <br />
+            process for crypto real estate transaction in <br />
+            LATAM
           </p>
         </div>
 
