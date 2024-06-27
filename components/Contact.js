@@ -1,4 +1,6 @@
 "use client";
+import { sendEmail } from "@/public/server-actions";
+import { CheckCircleIcon } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
 
 const Contact = () => {
@@ -6,24 +8,32 @@ const Contact = () => {
   const [email, setEmail] = useState();
   const [message, setMessage] = useState();
 
-  function submitForm(e) {
+  const [status, setStatus] = useState("");
+
+  async function submitForm(e) {
     e.preventDefault();
 
     if (!email || !name || !message) return;
 
-    console.log({ name, email, message });
-
+    setStatus("loading");
     // mandar email aca
+    await sendEmail({ email, message, name });
+
+    setEmail("");
+    setName("");
+    setMessage("");
+    setStatus("sent");
+    setTimeout(() => setStatus(""), 4000);
   }
 
   return (
-    <div className=" py-12">
-      <p className="text-center text-4xl text-[--color2] font-bold">
+    <div className=" py-12" id="contact">
+      <p className="text-center text-3xl md:text-4xl text-[--color2] font-bold">
         CONTACT US
       </p>
 
       <form
-        className="w-1/2 grid grid-cols-2 mx-auto gap-x-10 mt-10 sm:px-6"
+        className="w-[80%] md:w-1/2 grid grid-cols-2 mx-auto gap-x-10 mt-10 sm:px-6"
         onSubmit={submitForm}
       >
         {/* name */}
@@ -77,9 +87,15 @@ const Contact = () => {
         <button
           type="submit"
           onClick={submitForm}
-          className="bg-black text-white col-span-2 md:w-52 py-2 mt-6 rounded-lg"
+          className="bg-black text-white col-span-2 md:w-52 py-2 mt-6 rounded-lg grid place-items-center"
         >
-          Send Message
+          {status === "loading" ? (
+            <span className="spinner"></span>
+          ) : status === "sent" ? (
+            <CheckCircleIcon className="h-[25px] w-[25px]" />
+          ) : (
+            "Send Message"
+          )}
         </button>
       </form>
     </div>

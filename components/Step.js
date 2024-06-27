@@ -5,7 +5,7 @@ export default function Step({ stepNumber, title, description, numSteps }) {
     <div
       className={classNames(
         stepNumber === numSteps ? "border-transparent" : "border-[--color6]",
-        "border-l-[2px]  pl-12 pr-8 pb-14 relative"
+        "border-l-[2px]  pl-12 pr-0 md:pr-8 pb-8 md:pb-14 relative"
       )}
     >
       {/* circulito */}

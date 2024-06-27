@@ -55,7 +55,7 @@ const InfoEssets = () => {
     <>
       {/* catchphrase */}
       <div>
-        <p className="mt-16 font-bold text-blue-600 text-xl md:text-3xl flex justify-center text-center">
+        <p className="mt-16 md:mt-44 font-bold text-blue-600 text-xl md:text-3xl flex justify-center text-center">
           MAKING POSSIBLE TO BUY AND SELL
           <br /> REAL ESTATE WITH CRYPTO IN LATAM
         </p>
@@ -73,8 +73,8 @@ export default InfoEssets;
 
 function Card({ icon, description }) {
   return (
-    <div className="rounded-custom flex flex-col items-center rounded-lg p-4 border-2 bg-gray-50 flex-grow">
-      <Image className="mb-4 h-12 w-12" src={icon} alt="Exchange" />
+    <div className="rounded-custom flex flex-col items-center rounded-lg py-5 px-4 ring-[0.8px] ring-inset ring-black ring-opacity-10 bg-[#F8F8F8] flex-grow">
+      <Image className="mb-4 h-9 w-9 my-2" src={icon} alt="Exchange" />
       {description}
     </div>
   );

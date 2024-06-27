@@ -15,7 +15,7 @@ const Why_Essets = () => {
 
   return (
     // titulo
-    <div className="py-20 px-20 mb-32">
+    <div className="py-20 px-8 md:px-20 mb-32">
       <div className="text-center">
         <div className="relative text-5xl font-bold">
           <h1 className="mb-2 text-blue-600 -ml-16">WHY</h1>
@@ -57,9 +57,37 @@ const Why_Essets = () => {
             <br /> transaction
           </p>
         </div>
+
+        <Block
+          image={stars}
+          description={
+            "Broad experience in the real estate industry in Central America, Mexico and the Caribbean"
+          }
+        />
+        <Block
+          image={lock}
+          description={
+            "Secure transaction processed trough licensed corporate providers"
+          }
+        />
+        <Block
+          image={agreement}
+          description={
+            "Extense network of real estate lawyers in the region that can assist you with your transaction"
+          }
+        />
       </div>
     </div>
   );
 };
 
 export default Why_Essets;
+
+function Block({ image, description }) {
+  return (
+    <div className="rounded-custom flex flex-1 flex-col rounded ring-[0.8px] ring-inset ring-black ring-opacity-10 bg-[#F8F8F8] px-6 py-6">
+      <Image className="mx-4 mt-4  md:mt-10 h-12 w-12" src={image} alt="Lock" />
+      <p className="mt-4 md:mt-8">{description}</p>
+    </div>
+  );
+}
