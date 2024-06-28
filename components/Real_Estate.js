@@ -47,19 +47,17 @@ const Real_Estate = () => {
       {/* first pair */}
       <div className="flex flex-col md:grid  md:grid-cols-2 mt-16">
         <div>
-
           <p className="text-3xl text-blue-950 font-bold">Closing Process</p>
           <button className="text-white bg-blue-950 mt-16 -ml-1 mb-10 py-2 px-4 rounded-full">
-
-          <p className="text-3xl text-blue-950 font-bold mb-6">
-            Real Estate Closing <br />
-            Process
-          </p>
+            <p className="text-3xl text-blue-950 font-bold mb-6">
+              Real Estate Closing <br />
+              Process
+            </p>
+          </button>
           <Link
             href={"#contact"}
             className="text-white bg-blue-950 mt-10 py-2 px-4 rounded-full mb-8"
           >
-
             Get started today!
           </Link>
         </div>
@@ -77,32 +75,29 @@ const Real_Estate = () => {
         </div>
       </div>
       {/* second pair */}
-<<<<<<< HEAD
+
       <p className="ml-16 mt-14 text-3xl text-blue-950 font-bold">
         Payment Processing
       </p>
       <div className="grid md:grid-cols-2 mt-28">
         <div className="bg-white p-10 rounded-2xl -mt-10">
-=======
-      <div className="flex flex-col-reverse md:grid md:grid-cols-2 mt-28 mb-12">
-        <div className="bg-white p-10 rounded-2xl">
->>>>>>> 8b96d2a8e99fbafd5b527e2e3057eb9cbaefa06a
-          {steps2.map((step, index) => (
-            <Step
-              key={index}
-              stepNumber={index + 1}
-              title={step.title}
-              description={step.description}
-              numSteps={steps2.length}
-            />
-          ))}
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 mt-28 mb-12">
+            <div className="bg-white p-10 rounded-2xl">
+              {steps2.map((step, index) => (
+                <Step
+                  key={index}
+                  stepNumber={index + 1}
+                  title={step.title}
+                  description={step.description}
+                  numSteps={steps2.length}
+                />
+              ))}
+            </div>
+            <p className="w-1/2 md:w-full md:ml-16 mt-14 text-3xl text-blue-950 font-bold mb-6 md:mb-0">
+              Payment Processing
+            </p>
+          </div>
         </div>
-<<<<<<< HEAD
-=======
-        <p className="w-1/2 md:w-full md:ml-16 mt-14 text-3xl text-blue-950 font-bold mb-6 md:mb-0">
-          Payment Processing
-        </p>
->>>>>>> 8b96d2a8e99fbafd5b527e2e3057eb9cbaefa06a
       </div>
     </div>
   );
