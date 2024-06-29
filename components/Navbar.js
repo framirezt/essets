@@ -37,12 +37,12 @@ export default function Navbar() {
               {/* links + logo container */}
               <div className="flex flex-1 items-center justify-center sm:items-center sm:mt-4">
                 <Image
-                  className="h-20 w-auto -mt-2 pb-1"
+                  className="h-[87px] w-auto -mt-2 pb-1"
                   src={logo}
                   alt="Your Company"
                 />
                 {/* links */}
-                <div className="hidden sm:mx-6 sm:block">
+                <div className="hidden sm:mx-[5vw] sm:block">
                   <div className="flex space-x-4">
                     {links.map((item) => (
                       <Link
