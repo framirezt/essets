@@ -57,25 +57,6 @@ const Why_Essets = () => {
             <br /> transaction
           </p>
         </div>
-
-        <Block
-          image={stars}
-          description={
-            "Broad experience in the real estate industry in Central America, Mexico and the Caribbean"
-          }
-        />
-        <Block
-          image={lock}
-          description={
-            "Secure transaction processed trough licensed corporate providers"
-          }
-        />
-        <Block
-          image={agreement}
-          description={
-            "Extense network of real estate lawyers in the region that can assist you with your transaction"
-          }
-        />
       </div>
     </div>
   );
