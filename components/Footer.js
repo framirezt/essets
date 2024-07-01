@@ -1,7 +1,7 @@
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import logo from "@/images/logo.png";
+import logo from "@/images/logo-nobg.png";
 import bitcoin from "@/images/btc.png";
 import Link from "next/link";
 
@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <div className="relative h-96 md:h-72 bg-[--beige] mt-10 py-8 px-16 flex flex-col justify-between">
       <div className="flex flex-col md:flex-row items-start">
-        <Image src={logo} alt="essets" className="w-56 pb-8 md:mb-0 " />
+        <Image src={logo} alt="essets" className="w-32 pb-8 md:mb-0 " />
 
         <div className="grid grid-cols-2 md:flex flex-row gap-y-4 gap-x-12 md:mt-10 md:ml-64">
           {links.map((link, i) => (
