@@ -11,7 +11,7 @@ const Real_Estate = () => {
     },
     {
       title: "Payment Agreement (Essets)",
-      description: "Define the payment conditions, based on the PSA",
+      description: "Define the trade and payment conditions based on the PSA",
     },
     {
       title: "Closing (Lawyers)",
@@ -33,7 +33,7 @@ const Real_Estate = () => {
     {
       title: "Deposit",
       description:
-        "Buyer transfers the funds to complete the transaction to Essets designated account. If deposited in different currencies other than US$, immediately converted in US$ upon receipt",
+        "Buyer transfers the crytpo  to complete the transaction to Essets designated wallet. Crypto is immediately converted in US$ upon receipt. Esset will custody the funds until closing occurs",
     },
     {
       title: "Payment Process",
@@ -60,7 +60,7 @@ const Real_Estate = () => {
           </Link>
         </div>
 
-        <div className="bg-white p-10 rounded-2xl mt-8 md:mt-0">
+        <div className="bg-white p-10 rounded-2xl mt-8 md:mt-0 w-[700px]">
           {steps1.map((step, index) => (
             <Step
               key={index}
@@ -78,8 +78,8 @@ const Real_Estate = () => {
       </p>
       <div className="grid md:grid-cols-2 mt-28">
         <div className="bg-white p-10 rounded-2xl -mt-10">
-          <div className="flex flex-col-reverse md:grid md:grid-cols-2 mt-28 mb-12">
-            <div className="bg-white p-10 rounded-2xl">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 mt-10 mb-12 ">
+            <div className="bg-white p-10 rounded-2xl w-[600px] h-[600px]">
               {steps2.map((step, index) => (
                 <Step
                   key={index}

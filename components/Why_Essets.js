@@ -27,7 +27,7 @@ const Why_Essets = () => {
       {/* blocks */}
       <div className="mt-36 flex flex-col md:flex-row md:justify-between gap-5 md:mx-8">
         {/* first block */}
-        <div className="rounded-custom flex flex-1 flex-col rounded p-4 border-2 bg-gray-50">
+        <div className="rounded-custom flex flex-1 flex-col rounded p-4 border-2 bg-gray-50 min-h-[305px]">
           <Image className="mt-10 mx-6 h-16 w-16" src={stars} alt="Stars" />
           <p className="mt-8 ml-6 text-xl">
             Broad experience in the real estate
