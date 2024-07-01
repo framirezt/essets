@@ -19,7 +19,7 @@ export default function Home() {
       <InfoEssets />
       <Real_Estate />
       <Why_Essets />
-      <Team />
+      {/* <Team /> */}
       <Contact />
       <Footer />
     </main>

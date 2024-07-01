@@ -73,13 +73,10 @@ const Real_Estate = () => {
         </div>
       </div>
       {/* second pair */}
-      <p className="ml-16 mt-14 text-3xl text-blue-950 font-bold">
-        Payment Processing
-      </p>
-      <div className="grid md:grid-cols-2 mt-28">
-        <div className="bg-white p-10 rounded-2xl -mt-10">
+      <div className="grid md:grid-cols-2 mt-36">
+        <div className="bg-white p-4 rounded-2xl -mt-10 w-[600px]">
           <div className="flex flex-col-reverse md:grid md:grid-cols-2 mt-10 mb-12 ">
-            <div className="bg-white p-10 rounded-2xl w-[600px] h-[600px]">
+            <div className="bg-white p-10 rounded-2xl w-[500px] h-[600px]">
               {steps2.map((step, index) => (
                 <Step
                   key={index}
@@ -95,6 +92,9 @@ const Real_Estate = () => {
             </p> */}
           </div>
         </div>
+        <p className="ml-16 mt-14 text-3xl text-blue-950 font-bold">
+          Payment Processing
+        </p>
       </div>
     </div>
   );

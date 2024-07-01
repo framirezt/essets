@@ -25,19 +25,19 @@ const Why_Essets = () => {
         </div>
       </div>
       {/* blocks */}
-      <div className="mt-36 flex flex-col md:flex-row md:justify-between gap-5 md:mx-8">
+      <div className="mt-36 flex flex-col md:flex-row md:justify-between gap-16 md:mx-8">
         {/* first block */}
-        <div className="rounded-custom flex flex-1 flex-col rounded p-4 border-2 bg-gray-50 min-h-[305px]">
+        <div className="rounded-custom flex flex-1 flex-col rounded border-2 bg-gray-50 min-h-[250px]">
           <Image className="mt-10 mx-6 h-16 w-16" src={stars} alt="Stars" />
-          <p className="mt-8 ml-6 text-xl">
+          <p className="mt-8 ml-6 text-sm">
             Broad experience in the real estate
             <br /> industry in LATAM
           </p>
         </div>
         {/* second block */}
-        <div className="rounded-custom flex flex-1 flex-col rounded p-4 border-2 bg-gray-50 ">
+        <div className="rounded-custom flex flex-1 flex-col rounded border-2 bg-gray-50 ">
           <Image className="mx-6 mt-10 h-16 w-16" src={lock} alt="Lock" />
-          <p className="mt-8 ml-6 text-xl">
+          <p className="mt-8 ml-6 text-sm">
             Secure transaction processed trough
             <br /> licensed corporate providers. Exhaustive <br />
             KYC, SOF and Wallet verification to
@@ -45,13 +45,13 @@ const Why_Essets = () => {
           </p>
         </div>
         {/* third block */}
-        <div className="flex-1 rounded-custom flex flex-col rounded p-4 border-2 bg-gray-50">
+        <div className="flex-1 rounded-custom flex flex-col rounded  border-2 bg-gray-50">
           <Image
             className="mx-6 h-16 w-16 mt-10"
             src={agreement}
             alt="Agreement"
           />
-          <p className="mt-8 ml-6 text-xl">
+          <p className="mt-8 ml-6 text-sm">
             Extense network of real estate lawyers in
             <br /> the region that can assist you with your
             <br /> transaction
