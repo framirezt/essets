@@ -1,4 +1,5 @@
 "use client";
+import useFetch from "@/hooks/useFetch";
 import { sendEmail } from "@/public/server-actions";
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
@@ -10,6 +11,13 @@ const Contact = () => {
 
   const [status, setStatus] = useState("");
 
+  const { fetchAPI, error, setError } = useFetch(
+    // "http://127.0.0.1:3000/api/v1/users/essets",
+    "https://cloud.mintickets.com/api/v1/users/essets",
+    "POST",
+    true
+  );
+
   async function submitForm(e) {
     e.preventDefault();
 
@@ -17,7 +25,28 @@ const Contact = () => {
 
     setStatus("loading");
     // mandar email aca
-    await sendEmail({ email, message, name });
+    const data = {
+      name: name,
+      email: email,
+      message: message,
+    };
+
+    await fetchAPI(
+      data,
+      () => {
+        setStatus("sent");
+
+        // reset
+        setNombre("");
+        setEmail("");
+        setMessage("");
+
+        setTimeout(() => {
+          setStatus("");
+        }, 6000);
+      },
+      false
+    );
 
     setEmail("");
     setName("");
@@ -27,7 +56,7 @@ const Contact = () => {
   }
 
   return (
-    <div className=" py-12" id="contact">
+    <div className=" lg:py-12 py-8" id="contact">
       <p className="text-center text-3xl md:text-4xl text-[--color2] font-bold">
         CONTACT US
       </p>

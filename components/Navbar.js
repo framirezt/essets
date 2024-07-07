@@ -11,7 +11,7 @@ const links = [
   { name: "Home", href: "#home", current: true },
   { name: "About", href: "#about", current: false },
   { name: "How it works", href: "#how", current: false },
-  { name: "Contact us", href: "#contact", current: false },
+  // { name: "Contact us", href: "#contact", current: false },
 ];
 
 export default function Navbar() {
@@ -62,7 +62,7 @@ export default function Navbar() {
                   href={"#contact"}
                   className=" flex-row items-center gap-8 hidden sm:flex"
                 >
-                  <button className="bg-black text-white py-2 px-6 rounded-lg sm:ml-12 ">
+                  <button className="bg-black text-white py-2 px-6 rounded-lg sm:ml-0 ">
                     Book demo{" "}
                   </button>
                 </Link>

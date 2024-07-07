@@ -60,7 +60,7 @@ const Real_Estate = () => {
           </Link>
         </div>
 
-        <div className="bg-white p-10 rounded-2xl mt-8 md:mt-0 w-[700px]">
+        <div className="bg-white lg:p-10 p-6 rounded-2xl mt-8 md:mt-0 w-full">
           {steps1.map((step, index) => (
             <Step
               key={index}
@@ -73,26 +73,25 @@ const Real_Estate = () => {
         </div>
       </div>
       {/* second pair */}
-      <div className="grid md:grid-cols-2 mt-36">
-        <div className="bg-white p-4 rounded-2xl -mt-10 w-[600px]">
-          <div className="flex flex-col-reverse md:grid md:grid-cols-2 mt-10 mb-12 ">
-            <div className="bg-white p-10 rounded-2xl w-[500px] h-[600px]">
-              {steps2.map((step, index) => (
-                <Step
-                  key={index}
-                  stepNumber={index + 1}
-                  title={step.title}
-                  description={step.description}
-                  numSteps={steps2.length}
-                />
-              ))}
-            </div>
-            {/* <p className="w-1/2 md:w-full md:ml-16 mt-14 text-3xl text-blue-950 font-bold mb-6 md:mb-0">
-              Payment Processing
-            </p> */}
-          </div>
+      <div className="grid md:grid-cols-2 lg:mt-36 mt-20">
+        <p className="lg:hidden  my-8 text-3xl text-blue-950 font-bold">
+          Payment Processing
+        </p>
+
+        <div className="bg-white lg:p-10 p-6 rounded-2xl mt-8 md:mt-0 w-full">
+          {steps2.map((step, index) => (
+            <Step
+              key={index}
+              stepNumber={index + 1}
+              title={step.title}
+              description={step.description}
+              numSteps={steps2.length}
+            />
+          ))}
         </div>
-        <p className="ml-16 mt-14 text-3xl text-blue-950 font-bold">
+
+        {/* </div> */}
+        <p className="hidden lg:block ml-16 mt-14 text-3xl text-blue-950 font-bold">
           Payment Processing
         </p>
       </div>

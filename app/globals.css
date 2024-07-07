@@ -34,8 +34,8 @@ body {
 /* para el color de "With Crypto" */
 
 .linear-gradient-orange {
-  position: absolute;
-  transform: translate(-50%, -50%);
+  /* position: absolute; */
+  /* transform: translate(-50%, -50%); */
   background: linear-gradient(
     to right,
     rgba(255, 115, 0, 0.2),

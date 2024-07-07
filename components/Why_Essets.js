@@ -15,7 +15,7 @@ const Why_Essets = () => {
 
   return (
     // titulo
-    <div className="py-20 px-8 md:px-20 mb-20">
+    <div className="py-20 px-8 md:px-20 lg:mb-20 mb-5">
       <div className="text-center">
         <div className="relative text-5xl font-bold">
           <h1 className="mb-2 text-blue-600 -ml-16">WHY</h1>
