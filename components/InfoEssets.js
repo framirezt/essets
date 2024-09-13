@@ -31,7 +31,7 @@ const InfoEssets = () => {
       description: (
         <p className="text-center">
           Digital escrow is available in <br />
-          partnership with recognized payment <br />
+          partnership with recognized service <br />
           providers
         </p>
       ),
@@ -40,7 +40,7 @@ const InfoEssets = () => {
       icon: exchange,
       description: (
         <p className="text-center ">
-          Payment processing available in <br />
+          Escrow payment service available in <br />
           different currencies converted to US$
         </p>
       ),

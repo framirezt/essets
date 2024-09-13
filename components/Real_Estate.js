@@ -5,12 +5,12 @@ import Link from "next/link";
 const Real_Estate = () => {
   const steps1 = [
     {
-      title: "PSA (lawyers)",
+      title: "PSA (Purchase and Sale Agreement)",
       description:
         "Defines terms and conditions of the transaction & due diligence period by the Buyer’s lawyer",
     },
     {
-      title: "Payment Agreement (Essets)",
+      title: "Custody Agreement (Essets)",
       description: "Define the payment conditions, based on the PSA",
     },
     {
@@ -20,7 +20,8 @@ const Real_Estate = () => {
     },
     {
       title: "Disbursement (Essets)",
-      description: "Payment processed by Essets",
+      description:
+        "Payment processed by Essets based on terms and conditions of the PSA",
     },
   ];
 
@@ -38,7 +39,7 @@ const Real_Estate = () => {
     {
       title: "Payment Process",
       description:
-        "Upon closing funds are disbursed and transferred to designate destiny accounts (time to arrive the usual international wire transfers)",
+        "Upon closing funds are disbursed and transferred to designate destiny custody accounts (time to arrive the usual international wire transfers)",
     },
   ];
 

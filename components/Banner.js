@@ -28,7 +28,7 @@ const Banner = () => {
         </p>
         {/* {subtitle} */}
         <p className="relative text-sm md:text-lg top-16 text-stone-500 md:mt-4">
-          Payment processing service for real estate
+          Crossborder payment processing service for real estate
           {/* transactions */}
         </p>
       </div>
