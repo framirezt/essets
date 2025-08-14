@@ -49,8 +49,7 @@ const Real_Estate = () => {
       <div className="flex flex-col md:grid  md:grid-cols-2 mt-16">
         <div>
           <p className="text-3xl text-blue-950 font-bold mb-6">
-            Real Estate Closing <br />
-            Process
+            Closing Process
           </p>
           <Link
             href={"#contact"}

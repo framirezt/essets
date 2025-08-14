@@ -13,8 +13,8 @@ const Essets = () => {
       <div className="md:ml-32">
         <h1 className="text-3xl font-bold text-blue-600">Essets</h1>
         <p className="mt-8 text-lg">
-          A digital platorm that facilitates closing and payment process for
-          real estate transaction in Central America, Mexico and the Caribbean
+          A digital platform that facilitates payment process for crypto real
+          estate transaction in LATAM
         </p>
       </div>
 

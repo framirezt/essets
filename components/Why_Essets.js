@@ -35,7 +35,7 @@ const Why_Essets = () => {
         <Block
           image={lock}
           description={
-            "Secure transaction processed trough licensed corporate providers"
+            "Secure transaction processed trough licensed corporate providers. Exhaustive KYC, SOF and Wallet verification to ensure transparency and legitimacy. "
           }
         />
         <Block
